@@ -1,5 +1,6 @@
 package SnailRace;
 
+import java.util.InputMismatchException;
 import java.util.Scanner;
 
 public class main {
@@ -17,15 +18,23 @@ public class main {
         System.out.println("#                    Aqui quem manda é o espectador!!!                    #");
         System.out.println("###########################################################################");
 
-        System.out.println("      Quantos caracóis queres ver a competir pelo derradeiro prémio?");
+
+        try {
+            System.out.println("      Quantos caracóis queres ver a competir pelo derradeiro prémio?");
 
 
-        do {
-            if (competitors != 0) {
-                System.out.println("                    Ehhh!! Têm de ser pelo menos 3 Caracóis");
-            }
-            competitors = keyBoard.nextInt();
-        } while (competitors < 3);
+            do {
+                if (competitors != 0) {
+                    System.out.println("                    Ehhh!! Têm de ser pelo menos 3 Caracóis");
+                }
+                competitors = keyBoard.nextInt();
+            } while (competitors < 3);
+
+        } catch (InputMismatchException e) {
+            System.out.print("We got an error: ");
+            System.out.println("Não nos deste um número inteiro...");
+            keyBoard.next();
+        }
 
         System.out.println("     Ótimo! E agora, qual é a distancia que queres que eles precorram?");
 
@@ -52,6 +61,7 @@ public class main {
         for (counter = 0; counter < competitors; counter++) {
             thread[counter].start();
         }
+
 
     }
 }
