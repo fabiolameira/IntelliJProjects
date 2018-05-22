@@ -27,6 +27,18 @@ public class KnockKnockServer {
             outputLine = kkp.processInput(null);
             out.println(outputLine);
 
+            while ((inputLine = in.readLine()) != null) {
+                outputLine = kkp.processInput(inputLine);
+                out.println(outputLine);
+                if (outputLine.equals("Bye.")) {
+                    break;
+                }
+            }
+
+        } catch (IOException e) {
+            System.out.println("Exception caught when trying to listen on port "
+                    + portNumber + " or listening for a connection");
+            System.out.println(e.getMessage());
         }
 
     }
