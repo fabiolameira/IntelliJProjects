@@ -2,24 +2,11 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="cd0e3899-56a3-4282-95da-7bfdc9e04dd3" name="Default" comment="">
-      <change afterPath="$PROJECT_DIR$/../SocketsExampleClient/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../SocketsExampleClient/.idea/modules.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../SocketsExampleClient/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../SocketsExampleClient/.idea/workspace.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../SocketsExampleClient/SocketsExampleClient.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../SocketsExampleClient/src/client/KnockKnockCient.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/SocketsExampleServer.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/server/KnockKnockProtocol.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/server/KnockKnockServer.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Exemplos/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../Exemplos/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../MultiThreadingExample_V/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../MultiThreadingExample_V/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../SnailRaceProject/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../SnailRaceProject/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../SnailRaceProject/out/production/SnailRaceProject/SnailRace/main.class" beforeDir="false" afterPath="$PROJECT_DIR$/../SnailRaceProject/out/production/SnailRaceProject/SnailRace/main.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../SnailRaceProject/src/SnailRace/main.java" beforeDir="false" afterPath="$PROJECT_DIR$/../SnailRaceProject/src/SnailRace/main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../SocketsExampleClient/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../SocketsExampleClient/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />

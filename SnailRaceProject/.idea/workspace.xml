@@ -2,23 +2,11 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="819c44a6-fd8d-4c62-a486-e8334dc44b98" name="Default" comment="">
-      <change afterPath="$PROJECT_DIR$/../SocketsExampleClient/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../SocketsExampleClient/.idea/modules.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../SocketsExampleClient/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../SocketsExampleClient/.idea/workspace.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../SocketsExampleClient/SocketsExampleClient.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../SocketsExampleClient/src/client/KnockKnockCient.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../SocketsExampleServer/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../SocketsExampleServer/.idea/modules.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../SocketsExampleServer/.idea/workspace.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../SocketsExampleServer/SocketsExampleServer.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../SocketsExampleServer/src/server/KnockKnockProtocol.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../SocketsExampleServer/src/server/KnockKnockServer.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Exemplos/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../Exemplos/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../MultiThreadingExample_V/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../MultiThreadingExample_V/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/SnailRaceProject/SnailRace/main.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/SnailRaceProject/SnailRace/main.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/SnailRace/main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/SnailRace/main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../SocketsExampleClient/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../SocketsExampleClient/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../SocketsExampleServer/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../SocketsExampleServer/.idea/workspace.xml" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -33,8 +21,8 @@
       <file leaf-file-name="main.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/SnailRace/main.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="595">
-              <caret line="35" column="28" selection-start-line="35" selection-start-column="28" selection-end-line="35" selection-end-column="28" />
+            <state relative-caret-position="272">
+              <caret line="40" column="17" lean-forward="true" selection-start-line="40" selection-start-column="17" selection-end-line="40" selection-end-column="17" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -217,12 +205,13 @@
     <layout>
       <window_info anchor="right" id="Palette" order="3" />
       <window_info anchor="bottom" id="TODO" order="6" />
+      <window_info anchor="bottom" id="Messages" order="7" weight="0.32867134" />
       <window_info anchor="right" id="Palette&#9;" order="3" />
       <window_info id="Image Layers" order="2" />
       <window_info anchor="right" id="Capture Analysis" order="3" />
       <window_info anchor="bottom" id="Event Log" order="7" side_tool="true" />
       <window_info anchor="right" id="Maven Projects" order="3" />
-      <window_info anchor="bottom" id="Run" order="2" weight="0.28531468" />
+      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.28531468" />
       <window_info anchor="bottom" id="Version Control" order="7" />
       <window_info anchor="bottom" id="Terminal" order="7" />
       <window_info id="Capture Tool" order="2" />
@@ -241,7 +230,6 @@
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Find" order="1" />
-      <window_info anchor="bottom" id="Messages" order="7" weight="0.32867134" />
     </layout>
   </component>
   <component name="Vcs.Log.History.Properties">
@@ -703,8 +691,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/SnailRace/main.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="595">
-          <caret line="35" column="28" selection-start-line="35" selection-start-column="28" selection-end-line="35" selection-end-column="28" />
+        <state relative-caret-position="272">
+          <caret line="40" column="17" lean-forward="true" selection-start-line="40" selection-start-column="17" selection-end-line="40" selection-end-column="17" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>

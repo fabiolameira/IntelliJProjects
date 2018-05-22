@@ -18,34 +18,39 @@ public class main {
         System.out.println("#                    Aqui quem manda é o espectador!!!                    #");
         System.out.println("###########################################################################");
 
-
-        try {
-            System.out.println("      Quantos caracóis queres ver a competir pelo derradeiro prémio?");
-
-
-            do {
-                if (competitors != 0) {
-                    System.out.println("                    Ehhh!! Têm de ser pelo menos 3 Caracóis");
-                }
-                competitors = keyBoard.nextInt();
-            } while (competitors < 3);
-
-        } catch (InputMismatchException e) {
-            System.out.print("We got an error: ");
-            System.out.println("Não nos deste um número inteiro...");
-            keyBoard.next();
-        }
-
-        System.out.println("     Ótimo! E agora, qual é a distancia que queres que eles precorram?");
+        System.out.println("Quantos caracóis queres ver a competir pelo derradeiro prémio?");
 
         do {
-            if (distance != 0) {
-                System.out.println("                    Ehhh!! A distancia mínima é de 100mm");
+            try {
+                if (competitors != 0) {
+                    System.out.println("Ehhh!! Têm de ser pelo menos 3 Caracóis");
+                }
+                competitors = keyBoard.nextInt();
+
+            } catch (InputMismatchException e) {
+                System.out.print("We got an error: ");
+                System.out.println("Não nos deste um número inteiro. Tenta outra vez...");
+                keyBoard.next();
             }
-            distance = keyBoard.nextInt();
+        } while (competitors < 3);
+
+
+        System.out.println("Ótimo! E agora, qual é a distancia que queres que eles precorram?");
+
+        do {
+            try {
+                if (distance != 0) {
+                    System.out.println("Ehhh!! A distancia mínima é de 100mm");
+                }
+                distance = keyBoard.nextInt();
+            } catch (InputMismatchException e) {
+                System.out.print("We got an error: ");
+                System.out.println("Não nos deste um número inteiro. Tenta outra vez...");
+                keyBoard.next();
+            }
         } while (distance < 100);
 
-        System.out.println("                          Vamos a isso então! :D");
+        System.out.println("Vamos a isso então! :D");
         System.out.println("\n");
         System.out.println("\n");
 
