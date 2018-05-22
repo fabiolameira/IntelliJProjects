@@ -29,7 +29,7 @@ public class snail extends Thread {
 
     public void printingStatus() {
         System.out.println("O Caracol #" + dorsal + " avançou " + moveDistance + " mm. Já percorreu um total de "
-                + totalDistance + " mm. :D");
+                + totalDistance + " mm.");
     }
 
     public void run() {

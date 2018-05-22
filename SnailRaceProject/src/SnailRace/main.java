@@ -6,7 +6,7 @@ public class main {
 
     public static void main(String[] args) {
 
-        int competitors;
+        int competitors = 0;
         int distance = 0;
         int counter = 0;
 
@@ -15,18 +15,30 @@ public class main {
         System.out.println("###########################################################################");
         System.out.println("#      Seja Bem Vindo à maior e melhor corrida de Caracóis do Mundo!      #");
         System.out.println("#                    Aqui quem manda é o espectador!!!                    #");
-        System.out.println("#     Quantos caracóis queres ver a competir pelo derradeiro prémio?      #");
-        competitors = keyBoard.nextInt();
-        System.out.println("Ótimo! E agora, qual é a distancia que queres que eles precorram?");
+        System.out.println("###########################################################################");
+
+        System.out.println("      Quantos caracóis queres ver a competir pelo derradeiro prémio?");
+
+
+        do {
+            if (competitors != 0) {
+                System.out.println("                    Ehhh!! Têm de ser pelo menos 3 Caracóis");
+            }
+            competitors = keyBoard.nextInt();
+        } while (competitors < 3);
+
+        System.out.println("     Ótimo! E agora, qual é a distancia que queres que eles precorram?");
 
         do {
             if (distance != 0) {
-                System.out.println("Ehhh!! A distancia mínima é de 100mm");
+                System.out.println("                    Ehhh!! A distancia mínima é de 100mm");
             }
             distance = keyBoard.nextInt();
         } while (distance < 100);
 
-        System.out.println("Vamos a isso então! :D");
+        System.out.println("                          Vamos a isso então! :D");
+        System.out.println("\n");
+        System.out.println("\n");
 
         route route = new route(distance);
         Thread thread[] = new Thread[competitors];
@@ -42,5 +54,4 @@ public class main {
         }
 
     }
-
 }
