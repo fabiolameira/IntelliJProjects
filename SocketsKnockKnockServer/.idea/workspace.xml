@@ -2,9 +2,16 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="cd0e3899-56a3-4282-95da-7bfdc9e04dd3" name="Default" comment="">
-      <change beforePath="$PROJECT_DIR$/../SnailRaceProject/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../SnailRaceProject/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../SocketsExampleClient/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../SocketsExampleClient/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../SocketsExampleServer/.idea/misc.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../SocketsExampleServer/.idea/modules.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../SocketsExampleServer/.idea/vcs.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../SocketsExampleServer/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../SocketsExampleServer/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../SocketsExampleServer/SocketsExampleServer.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../SocketsExampleServer/out/production/SocketsExampleServer/server/KnockKnockProtocol.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../SocketsExampleServer/out/production/SocketsExampleServer/server/KnockKnockServer.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../SocketsExampleServer/src/server/KnockKnockProtocol.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../SocketsExampleServer/src/server/KnockKnockServer.java" beforeDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -19,8 +26,8 @@
       <file leaf-file-name="KnockKnockServer.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/server/KnockKnockServer.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="225">
-              <caret line="25" column="8" selection-start-line="25" selection-start-column="8" selection-end-line="25" selection-end-column="8" />
+            <state relative-caret-position="136">
+              <caret line="8" column="27" lean-forward="true" selection-start-line="8" selection-start-column="27" selection-end-line="8" selection-end-column="27" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -61,21 +68,22 @@
     </navigator>
     <panes>
       <pane id="PackagesPane" />
+      <pane id="AndroidView" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
             <path>
-              <item name="SocketsExampleServer" type="b2602c69:ProjectViewProjectNode" />
-              <item name="SocketsExampleServer" type="462c0819:PsiDirectoryNode" />
+              <item name="SocketsKnockKnockServer" type="b2602c69:ProjectViewProjectNode" />
+              <item name="SocketsKnockKnockServer" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
-              <item name="SocketsExampleServer" type="b2602c69:ProjectViewProjectNode" />
-              <item name="SocketsExampleServer" type="462c0819:PsiDirectoryNode" />
+              <item name="SocketsKnockKnockServer" type="b2602c69:ProjectViewProjectNode" />
+              <item name="SocketsKnockKnockServer" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
-              <item name="SocketsExampleServer" type="b2602c69:ProjectViewProjectNode" />
-              <item name="SocketsExampleServer" type="462c0819:PsiDirectoryNode" />
+              <item name="SocketsKnockKnockServer" type="b2602c69:ProjectViewProjectNode" />
+              <item name="SocketsKnockKnockServer" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="server" type="462c0819:PsiDirectoryNode" />
             </path>
@@ -83,7 +91,6 @@
           <select />
         </subPane>
       </pane>
-      <pane id="AndroidView" />
       <pane id="Scope" />
     </panes>
   </component>
@@ -108,7 +115,7 @@
   <component name="RunManager">
     <configuration name="Unnamed" type="Application" factoryName="Application">
       <option name="MAIN_CLASS_NAME" value="server.KnockKnockServer" />
-      <module name="SocketsExampleServer" />
+      <module name="SocketsKnockKnockServer" />
       <option name="PROGRAM_PARAMETERS" value="10001" />
       <option name="WORKING_DIRECTORY" value="file://$PROJECT_DIR$" />
     </configuration>
@@ -169,16 +176,17 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="0" width="1366" height="768" extended-state="6" />
+    <editor active="true" />
     <layout>
       <window_info anchor="right" id="Palette" order="3" />
       <window_info anchor="bottom" id="TODO" order="6" />
-      <window_info anchor="bottom" id="Messages" />
+      <window_info anchor="bottom" id="Messages" order="7" />
       <window_info anchor="right" id="Palette&#9;" order="3" />
       <window_info id="Image Layers" order="2" />
       <window_info anchor="right" id="Capture Analysis" order="3" />
       <window_info anchor="bottom" id="Event Log" order="7" side_tool="true" />
       <window_info anchor="right" id="Maven Projects" order="3" />
-      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.43636364" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.43636364" />
       <window_info anchor="bottom" id="Version Control" order="7" />
       <window_info anchor="bottom" id="Terminal" order="7" />
       <window_info id="Capture Tool" order="2" />
@@ -202,6 +210,16 @@
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/src/server/KnockKnockServer.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="391">
+          <caret line="25" column="8" selection-start-line="25" selection-start-column="8" selection-end-line="25" selection-end-column="8" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/server/KnockKnockServer.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="391">
@@ -241,8 +259,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/server/KnockKnockServer.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="225">
-          <caret line="25" column="8" selection-start-line="25" selection-start-column="8" selection-end-line="25" selection-end-column="8" />
+        <state relative-caret-position="136">
+          <caret line="8" column="27" lean-forward="true" selection-start-line="8" selection-start-column="27" selection-end-line="8" selection-end-column="27" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
