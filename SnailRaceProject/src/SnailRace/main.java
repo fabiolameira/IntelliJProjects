@@ -67,6 +67,5 @@ public class main {
             thread[counter].start();
         }
 
-
     }
 }
