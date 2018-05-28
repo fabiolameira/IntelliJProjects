@@ -9,6 +9,8 @@ public class main {
 
         int competitors = 0;
         int distance = 0;
+        char customSpeedQuestion = 'N';
+        int customSpeed = 0;
         int counter = 0;
 
         Scanner keyBoard = new Scanner(System.in);
@@ -35,7 +37,7 @@ public class main {
         } while (competitors < 3);
 
 
-        System.out.println("Ótimo! E agora, qual é a distancia que queres que eles precorram?");
+        System.out.println("Boa! E agora, qual é a distancia que queres que eles precorram?");
 
         do {
             try {
@@ -49,6 +51,18 @@ public class main {
                 keyBoard.next();
             }
         } while (distance < 100);
+
+        System.out.println("Desejas adicionar uma velociada personalizada? (S/N)");
+        customSpeedQuestion = keyBoard.next().charAt(0);
+
+        if (customSpeedQuestion == 'N' || customSpeedQuestion == 'n') {
+            System.out.println("Velociade máxima definida com 10mm/movimento");
+        } else if (customSpeedQuestion == 'S' || customSpeedQuestion == 's') {
+            System.out.println("Ótimo, qual é a velocidade máxima que queres definir (1 a 10)?");
+            customSpeed = keyBoard.nextInt();
+            //fazer setSpeed para o caracol.
+            System.out.println("Velociade máxima definida com " + customSpeed + "mm/movimento");
+        }
 
         System.out.println("Vamos a isso então! :D");
         System.out.println("\n");
@@ -66,6 +80,13 @@ public class main {
         for (counter = 0; counter < competitors; counter++) {
             thread[counter].start();
         }
-
+        for (counter = 0; counter < competitors; counter++) {
+            try {
+                thread[counter].join();
+            } catch (InterruptedException ex) {
+                System.out.print("We got an error: ");
+                System.out.println("A abortar");
+            }
+        }
     }
 }

@@ -2,22 +2,11 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="a2a8e789-3c74-4f32-83ba-03cf30435080" name="Default" comment="">
-      <change beforePath="$PROJECT_DIR$/../SocketsExampleClient/.idea/misc.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../SocketsExampleClient/.idea/modules.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../SocketsExampleClient/.idea/vcs.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../SocketsExampleClient/.idea/workspace.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../SocketsExampleClient/SocketsExampleClient.iml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../SocketsExampleClient/out/production/SocketsExampleClient/client/KnockKnockCient.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../SocketsExampleClient/src/client/KnockKnockCient.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../SocketsExampleServer/.idea/misc.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../SocketsExampleServer/.idea/modules.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../SocketsExampleServer/.idea/vcs.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../SocketsExampleServer/.idea/workspace.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../SocketsExampleServer/SocketsExampleServer.iml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../SocketsExampleServer/out/production/SocketsExampleServer/server/KnockKnockProtocol.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../SocketsExampleServer/out/production/SocketsExampleServer/server/KnockKnockServer.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../SocketsExampleServer/src/server/KnockKnockProtocol.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../SocketsExampleServer/src/server/KnockKnockServer.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../SnailRaceProject/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../SnailRaceProject/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../SnailRaceProject/out/production/SnailRaceProject/SnailRace/snail.class" beforeDir="false" afterPath="$PROJECT_DIR$/../SnailRaceProject/out/production/SnailRaceProject/SnailRace/snail.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../SnailRaceProject/src/SnailRace/snail.java" beforeDir="false" afterPath="$PROJECT_DIR$/../SnailRaceProject/src/SnailRace/snail.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../SocketsKnockKnockServer/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../SocketsKnockKnockServer/.idea/workspace.xml" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -28,20 +17,7 @@
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
   <component name="FileEditorManager">
-    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="KnockKnockCient.java" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/client/KnockKnockCient.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="170">
-              <caret line="10" lean-forward="true" selection-start-line="10" selection-end-line="10" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-    </leaf>
+    <leaf />
   </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
@@ -73,7 +49,6 @@
     </navigator>
     <panes>
       <pane id="Scope" />
-      <pane id="AndroidView" />
       <pane id="PackagesPane" />
       <pane id="ProjectPane">
         <subPane>
@@ -97,6 +72,7 @@
           <select />
         </subPane>
       </pane>
+      <pane id="AndroidView" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -181,7 +157,6 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="0" width="1366" height="768" extended-state="6" />
-    <editor active="true" />
     <layout>
       <window_info anchor="right" id="Palette" order="3" />
       <window_info anchor="bottom" id="TODO" order="6" />
@@ -190,12 +165,12 @@
       <window_info anchor="right" id="Capture Analysis" order="3" />
       <window_info anchor="bottom" id="Event Log" order="7" side_tool="true" />
       <window_info anchor="right" id="Maven Projects" order="3" />
-      <window_info anchor="bottom" id="Run" order="2" weight="0.43496504" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.36643356" />
       <window_info anchor="bottom" id="Version Control" order="7" />
       <window_info anchor="bottom" id="Terminal" order="7" />
       <window_info id="Capture Tool" order="2" />
       <window_info id="Designer" order="2" />
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.17423134" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.17423134" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info id="UI Designer" order="2" />
@@ -215,6 +190,16 @@
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/src/client/KnockKnockCient.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="85">
+          <caret line="10" lean-forward="true" selection-start-line="10" selection-end-line="10" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/client/KnockKnockCient.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="153">
@@ -244,8 +229,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/client/KnockKnockCient.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="170">
-          <caret line="10" lean-forward="true" selection-start-line="10" selection-end-line="10" />
+        <state relative-caret-position="35">
+          <caret line="10" selection-start-line="10" selection-end-line="10" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>

@@ -6,6 +6,7 @@ public class snail extends Thread {
 
     private int dorsal;
     private Random random = new Random();
+    private int speed = 10;
     private int moveDistance;
     private int totalDistance;
     private int totalMoves;
@@ -18,6 +19,7 @@ public class snail extends Thread {
 
     snail(int dorsal, route route) {
         this.dorsal = dorsal;
+        this.speed = speed;
         this.moveDistance = moveDistance;
         this.totalMoves = totalMoves;
         this.snailPlace = snailPlace;
@@ -41,10 +43,16 @@ public class snail extends Thread {
         return totalMoves;
     }
 
-
     public int getSnailPlace() {
-
         return snailPlace;
+    }
+
+    public void setTotalDistance(int totalDistance) {
+        this.totalDistance = totalDistance;
+    }
+
+    public void setTotalMoves(int totalMoves){
+        this.totalMoves = totalMoves;
     }
 
     public void setSnailPlace(int place) {
@@ -53,12 +61,12 @@ public class snail extends Thread {
 
 
     public void move() {
-        moveDistance = random.nextInt(10) + 1;
+        moveDistance = random.nextInt(speed) + 1;
         totalDistance += moveDistance;
         totalMoves++;
     }
 
-    public void printingStatus() {
+    public void printingRunningStatus() {
         System.out.println("O Caracol #" + getDorsal() + " avançou " + getMoveDistance() + " mm. Já percorreu um total de "
                 + getTotalDistance() + " mm.");
     }
@@ -69,6 +77,12 @@ public class snail extends Thread {
         System.out.println("O Caracol #" + getDorsal() + " passou a meta em " + getSnailPlace() + placeSuffix + " lugar!" +
                 " Percorrendo um total de " + getTotalDistance() + " mm em " + getTotalMoves() + " Movimentos!");
         place++;
+    }
+
+    public void setAllStatus() {
+        setTotalDistance(getTotalDistance());
+        setTotalMoves(getTotalMoves());
+        setSnailPlace(getSnailPlace());
     }
 
     public void printingAllStatus() {
@@ -84,16 +98,15 @@ public class snail extends Thread {
                 move();
                 Thread.sleep(100);
                 if (totalDistance < route.getDistance()) {
-                    printingStatus();
+                    printingRunningStatus();
                 } else {
                     printingPlaces();
+                    setAllStatus();
+                    printingAllStatus();
                 }
             }
-
         } catch (Exception e) {
             System.out.println("Exception unspecified");
         }
-
-        printingAllStatus();
     }
 }
