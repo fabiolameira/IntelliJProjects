@@ -3,22 +3,19 @@ package SnailRace;
 public class route {
 
     private int distance;
+    private int speed;
 
-    route(int distance) {
+    route(int distance, int speed) {
         this.distance = distance;
+        this.speed = speed;
     }
 
     public int getDistance() {
-        return distance;
+        return this.distance;
     }
 
-    public void setDistance(int distance) {
-        this.distance = distance;
-    }
-
-    // Construtor que precisa de estar vazio!!
-    route() {
-
+    public int getSpeed() {
+        return speed;
     }
 
 }

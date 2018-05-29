@@ -9,7 +9,7 @@ public class main {
 
         int competitors = 0;
         int distance = 0;
-        char customSpeedQuestion = 'N';
+        char customSpeedQuestion = ' ';
         int customSpeed = 0;
         int counter = 0;
 
@@ -24,10 +24,10 @@ public class main {
 
         do {
             try {
-                if (competitors != 0) {
+                competitors = keyBoard.nextInt();
+                if (competitors < 3) {
                     System.out.println("Ehhh!! Têm de ser pelo menos 3 Caracóis");
                 }
-                competitors = keyBoard.nextInt();
 
             } catch (InputMismatchException e) {
                 System.out.print("We got an error: ");
@@ -36,15 +36,14 @@ public class main {
             }
         } while (competitors < 3);
 
-
         System.out.println("Boa! E agora, qual é a distancia que queres que eles precorram?");
 
         do {
             try {
-                if (distance != 0) {
+                distance = keyBoard.nextInt();
+                if (distance < 100) {
                     System.out.println("Ehhh!! A distancia mínima é de 100mm");
                 }
-                distance = keyBoard.nextInt();
             } catch (InputMismatchException e) {
                 System.out.print("We got an error: ");
                 System.out.println("Não nos deste um número inteiro. Tenta outra vez...");
@@ -52,15 +51,43 @@ public class main {
             }
         } while (distance < 100);
 
-        System.out.println("Desejas adicionar uma velociada personalizada? (S/N)");
-        customSpeedQuestion = keyBoard.next().charAt(0);
+        System.out.println("Desejas adicionar uma velocidade personalizada? (S/N)");
+
+        do {
+            try {
+                customSpeedQuestion = keyBoard.next().charAt(0);
+                if (customSpeedQuestion != 'S' && customSpeedQuestion != 's' && customSpeedQuestion != 'N' && customSpeedQuestion != 'n') {
+                    System.out.println("A resposta não é válida, tenta outra vez.");
+                }
+            } catch (InputMismatchException e) {
+                System.out.print("We got an error: ");
+                System.out.println("A resposta não é válida, tenta outra vez.");
+                keyBoard.next();
+            }
+        }
+        while (customSpeedQuestion != 'S' && customSpeedQuestion != 's' && customSpeedQuestion != 'N' && customSpeedQuestion != 'n');
 
         if (customSpeedQuestion == 'N' || customSpeedQuestion == 'n') {
+            customSpeed = 10;
             System.out.println("Velociade máxima definida com 10mm/movimento");
         } else if (customSpeedQuestion == 'S' || customSpeedQuestion == 's') {
             System.out.println("Ótimo, qual é a velocidade máxima que queres definir (1 a 10)?");
-            customSpeed = keyBoard.nextInt();
-            //fazer setSpeed para o caracol.
+
+            do {
+                try {
+                    customSpeed = keyBoard.nextInt();
+                    if (customSpeed < 1 || customSpeed > 10) {
+                        System.out.println("A resposta não é válida... A velocidade tem de estar entre 1 e 10mm/movimento.");
+                        System.out.println("Tenta de novo.");
+                    }
+                } catch (InputMismatchException e) {
+                    System.out.print("We got an error: ");
+                    System.out.println("A resposta não é válida, tenta outra vez.");
+                    keyBoard.next();
+                }
+            }
+            while (customSpeed < 1 || customSpeed > 10);
+
             System.out.println("Velociade máxima definida com " + customSpeed + "mm/movimento");
         }
 
@@ -68,7 +95,7 @@ public class main {
         System.out.println("\n");
         System.out.println("\n");
 
-        route route = new route(distance);
+        route route = new route(distance, customSpeed);
         Thread thread[] = new Thread[competitors];
 
         do {

@@ -1,69 +1,71 @@
 package SnailRace;
 
 import java.util.Random;
+import java.util.concurrent.locks.Lock;
+import java.util.concurrent.locks.ReentrantLock;
 
 public class snail extends Thread {
 
     private int dorsal;
-    private Random random = new Random();
-    private int speed = 10;
+    private int route;
+    private int speed;
     private int moveDistance;
     private int totalDistance;
     private int totalMoves;
     private int snailPlace;
-    route route = new route();
+
+    private Random random = new Random();
 
 
     private static int place = 1;
     private static char placeSuffix = 'º';
 
+    private final Lock queueLock = new ReentrantLock();
+
     snail(int dorsal, route route) {
         this.dorsal = dorsal;
-        this.speed = speed;
-        this.moveDistance = moveDistance;
-        this.totalMoves = totalMoves;
-        this.snailPlace = snailPlace;
-        this.route.setDistance(route.getDistance());
+        this.route = route.getDistance();
+        this.speed = route.getSpeed();
         totalDistance += moveDistance;
     }
 
     public int getDorsal() {
-        return dorsal;
+        return this.dorsal;
     }
 
     public int getMoveDistance() {
-        return moveDistance;
+        return this.moveDistance;
     }
 
     public int getTotalDistance() {
-        return totalDistance;
+        return this.totalDistance;
     }
 
     public int getTotalMoves() {
-        return totalMoves;
+        return this.totalMoves;
     }
 
     public int getSnailPlace() {
-        return snailPlace;
+        return this.snailPlace;
     }
 
     public void setTotalDistance(int totalDistance) {
         this.totalDistance = totalDistance;
     }
 
-    public void setTotalMoves(int totalMoves){
+    private void setTotalMoves(int totalMoves){
         this.totalMoves = totalMoves;
     }
 
-    public void setSnailPlace(int place) {
+    private void setSnailPlace(int place) {
         this.snailPlace = place;
     }
 
 
     public void move() {
-        moveDistance = random.nextInt(speed) + 1;
-        totalDistance += moveDistance;
-        totalMoves++;
+        this.moveDistance = random.nextInt(speed) + 1;
+        this.totalDistance += this.moveDistance;
+        this.totalMoves++;
     }
 
     public void printingRunningStatus() {
@@ -73,13 +75,15 @@ public class snail extends Thread {
 
 
     public void printingPlaces() {
-        setSnailPlace(place);
-        System.out.println("O Caracol #" + getDorsal() + " passou a meta em " + getSnailPlace() + placeSuffix + " lugar!" +
+        queueLock.lock();
+        setSnailPlace(this.place);
+        System.out.println("O Caracol #" + getDorsal() + " passou a meta em " + getSnailPlace() + this.placeSuffix + " lugar!" +
                 " Percorrendo um total de " + getTotalDistance() + " mm em " + getTotalMoves() + " Movimentos!");
-        place++;
+        this.place++;
+        queueLock.unlock();
     }
 
-    public void setAllStatus() {
+    private void setAllStatus() {
         setTotalDistance(getTotalDistance());
         setTotalMoves(getTotalMoves());
         setSnailPlace(getSnailPlace());
@@ -94,10 +98,10 @@ public class snail extends Thread {
 
     public void run() {
         try {
-            while (totalDistance < route.getDistance()) {
+            while (this.totalDistance < this.route) {
                 move();
                 Thread.sleep(100);
-                if (totalDistance < route.getDistance()) {
+                if (this.totalDistance < this.route) {
                     printingRunningStatus();
                 } else {
                     printingPlaces();
