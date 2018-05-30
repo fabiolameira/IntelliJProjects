@@ -2,8 +2,14 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="1bae9df3-d6e9-4a6d-a51f-2595509a2abc" name="Default" comment="">
-      <change beforePath="$PROJECT_DIR$/../MultiThreadingExample_V/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../MultiThreadingExample_V/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../SnailRaceProject/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../SnailRaceProject/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../SnailRaceProject/out/production/SnailRaceProject/SnailRace/main.class" beforeDir="false" afterPath="$PROJECT_DIR$/../SnailRaceProject/out/production/SnailRaceProject/SnailRace/main.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../SnailRaceProject/out/production/SnailRaceProject/SnailRace/snail.class" beforeDir="false" afterPath="$PROJECT_DIR$/../SnailRaceProject/out/production/SnailRaceProject/SnailRace/snail.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../SnailRaceProject/out/production/SnailRaceProject/SnailRace/statistics.class" beforeDir="false" afterPath="$PROJECT_DIR$/../SnailRaceProject/out/production/SnailRaceProject/SnailRace/statistics.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../SnailRaceProject/src/SnailRace/main.java" beforeDir="false" afterPath="$PROJECT_DIR$/../SnailRaceProject/src/SnailRace/main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../SnailRaceProject/src/SnailRace/snail.java" beforeDir="false" afterPath="$PROJECT_DIR$/../SnailRaceProject/src/SnailRace/snail.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../SnailRaceProject/src/SnailRace/statistics.java" beforeDir="false" afterPath="$PROJECT_DIR$/../SnailRaceProject/src/SnailRace/statistics.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -14,12 +20,12 @@
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
   <component name="FileEditorManager">
-    <leaf>
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file leaf-file-name="Excepções_04.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/exemplo_12/Excepções_04.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="204">
-              <caret line="20" selection-start-line="20" selection-end-line="37" selection-end-column="24" />
+            <state relative-caret-position="153">
+              <caret line="17" column="14" selection-start-line="17" selection-start-column="14" selection-end-line="17" selection-end-column="14" />
             </state>
           </provider>
         </entry>
@@ -41,8 +47,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="PackagesPane" />
-      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -55,17 +59,13 @@
               <item name="Exemplos" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
             </path>
-            <path>
-              <item name="Exemplos" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Exemplos" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="exemplo_12" type="462c0819:PsiDirectoryNode" />
-            </path>
           </expand>
           <select />
         </subPane>
       </pane>
       <pane id="AndroidView" />
+      <pane id="Scope" />
+      <pane id="PackagesPane" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -144,7 +144,6 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
-    <editor active="true" />
     <layout>
       <window_info anchor="right" id="Palette" order="3" />
       <window_info anchor="bottom" id="TODO" order="6" />
@@ -177,6 +176,20 @@
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/src/exemplo_12/Excepções_04.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="255">
+          <caret line="17" column="14" lean-forward="true" selection-start-line="17" selection-start-column="14" selection-end-line="17" selection-end-column="14" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/exemplo_12/Excepções_04.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="306">
+          <caret line="20" selection-start-line="20" selection-end-line="37" selection-end-column="24" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/exemplo_12/Excepções_01.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="204">
@@ -186,8 +199,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/exemplo_12/Excepções_04.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="204">
-          <caret line="20" selection-start-line="20" selection-end-line="37" selection-end-column="24" />
+        <state relative-caret-position="153">
+          <caret line="17" column="14" selection-start-line="17" selection-start-column="14" selection-end-line="17" selection-end-column="14" />
         </state>
       </provider>
     </entry>
