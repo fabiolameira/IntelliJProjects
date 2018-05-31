@@ -39,13 +39,16 @@ public class statistics {
     public void showStatistics() {
         queueLock.lock();
         for (int c = 1; c < counter; c++) {
-            System.out.println("==============================================");
-            System.out.println("Dorsal: " + c);
-            System.out.println("Distancia Total: " + this.totalDistance[c]);
-            System.out.println("Total de Movimentos: " + this.totalMoves[c]);
-            System.out.println("Lugar: " + this.snailPlace[c] + "º Lugar");
-            System.out.println("Tempo de Corrida: " + this.runTime[c] + " segundo(s)");
-            System.out.println("Média de mm por Avanço: " + (this.totalDistance[c] / this.totalMoves[c]) + " mm");
+            System.out.println("                                    ============================================");
+            System.out.println("                                    ॥      Dorsal: " + c + "                           ॥");
+            System.out.println("                                    ॥      Classificação: " + this.snailPlace[c] + "º Lugar             ॥");
+            System.out.println("                                    ॥      Distancia Total: " + this.totalDistance[c] + "                ॥");
+            System.out.println("                                    ॥      Total de Movimentos: " + this.totalMoves[c] +"             ॥");
+            System.out.println("                                    ॥      Tempo de Corrida: " + this.runTime[c] + " segundo(s)     ॥");
+            System.out.println("                                    ॥      Média de mm por Avanço: " + (this.totalDistance[c] / this.totalMoves[c])
+                    + " mm        ॥");
+            System.out.println("                                    ============================================");
+            System.out.print("\n");
         }
         queueLock.unlock();
     }

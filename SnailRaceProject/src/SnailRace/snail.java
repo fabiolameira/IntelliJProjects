@@ -47,14 +47,19 @@ public class snail extends Thread {
     }
 
     private void printingRunningStatus() {
-        System.out.println("O Caracol #" + getDorsal() + " avançou " + getMoveDistance() + " mm. Já percorreu um total de "
-                + getTotalDistance() + " mm.");
+        System.out.println("                  _@_/ #" + getDorsal() + "  ->  O Caracol #" + getDorsal() + " avançou " + getMoveDistance()
+                + " mm.  -->  Distancia percorrida: " + getTotalDistance() + " mm.");
     }
 
     private void printingFinalStatus() {
-        System.out.println("O Caracol #" + getDorsal() + " cruzou a meta em " + statistics.getSnailPlace(getDorsal()) + "º Lugar!"
-                + "Percorreu um total de " + getTotalDistance() + " em " + getTotalMoves() + " movimentos!");
-        System.out.println();
+        System.out.print("\n");
+        System.out.println("      ==========================================================================================" +
+                "============");
+        System.out.println("      ॥   O Caracol #" + getDorsal() + " cruzou a meta em " + statistics.getSnailPlace(getDorsal()) + "º Lugar!"
+                + " Percorreu um total de " + getTotalDistance() + " em " + getTotalMoves() + " movimentos!    _@_/ #" + getDorsal() + "   ॥");
+        System.out.println("      ==========================================================================================" +
+                "============");
+        System.out.print("\n");
     }
 
     private void saveStatistics() {
@@ -67,7 +72,7 @@ public class snail extends Thread {
             this.runTime = System.currentTimeMillis();
             while (this.totalDistance < this.route) {
                 move();
-                Thread.sleep(100);
+                Thread.sleep(1000);
                 if (this.totalDistance < this.route) {
                     printingRunningStatus();
                 } else {

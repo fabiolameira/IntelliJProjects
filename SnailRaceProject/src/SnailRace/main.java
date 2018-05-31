@@ -41,7 +41,7 @@ public class main {
                 }
 
             } catch (InputMismatchException e) {
-                System.out.println("                            Não nos deste um número inteiro. Tenta outra vez...");
+                System.out.println("                         Não nos deste um número inteiro. Tenta outra vez...");
                 keyBoard.next();
             }
         } while (competitors < 3 || competitors > 500);
@@ -57,7 +57,7 @@ public class main {
                     System.out.println("                                Ehhh!! A distancia mínima é de 100mm");
                 }
             } catch (InputMismatchException e) {
-                System.out.println("                            Não nos deste um número inteiro. Tenta outra vez...");
+                System.out.println("                         Não nos deste um número inteiro. Tenta outra vez...");
                 keyBoard.next();
             }
         } while (distance < 100);
@@ -70,9 +70,9 @@ public class main {
                 customSpeedQuestion = keyBoard.next().charAt(0);
                 System.out.print("\n");
                 if (customSpeedQuestion != 'S' && customSpeedQuestion != 's' && customSpeedQuestion != 'N' && customSpeedQuestion != 'n') {
-                    System.out.println("A resposta não é válida, tenta outra vez.");
+                    System.out.println("                             A resposta não é válida, tenta outra vez.");
                 }
-            } catch (InputMismatchException e) {
+            } catch (Exception e) {
                 System.out.println("                                 A resposta não é válida, tenta outra vez.");
                 keyBoard.next();
             }
@@ -80,7 +80,7 @@ public class main {
 
         if (customSpeedQuestion == 'N' || customSpeedQuestion == 'n') {
             customSpeed = 10;
-            System.out.println("                                 Velociade máxima definida com 10mm/movimento");
+            System.out.println("                              Velociade máxima definida com 10mm/movimento");
         } else if (customSpeedQuestion == 'S' || customSpeedQuestion == 's') {
             System.out.println("                     Ótimo, qual é a velocidade máxima que queres definir (1 a 10)?");
 
@@ -112,6 +112,7 @@ public class main {
         do {
             thread[counter] = new Thread(new snail(counter + 1, route, statistics));
             System.out.println("                                     Caracol #" + (counter + 1) + " pronto para correr!");
+            System.out.println("\n");
             counter++;
         } while (counter < competitors);
 
