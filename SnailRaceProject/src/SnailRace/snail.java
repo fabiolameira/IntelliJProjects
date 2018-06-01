@@ -72,7 +72,7 @@ public class snail extends Thread {
             this.runTime = System.currentTimeMillis();
             while (this.totalDistance < this.route) {
                 move();
-                Thread.sleep(1000);
+                Thread.sleep(random.nextInt(1000) + 1);
                 if (this.totalDistance < this.route) {
                     printingRunningStatus();
                 } else {

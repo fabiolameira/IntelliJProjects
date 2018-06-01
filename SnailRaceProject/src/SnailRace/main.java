@@ -76,7 +76,8 @@ public class main {
                 System.out.println("                                 A resposta não é válida, tenta outra vez.");
                 keyBoard.next();
             }
-        } while (customSpeedQuestion != 'S' && customSpeedQuestion != 's' && customSpeedQuestion != 'N' && customSpeedQuestion != 'n');
+        }
+        while (customSpeedQuestion != 'S' && customSpeedQuestion != 's' && customSpeedQuestion != 'N' && customSpeedQuestion != 'n');
 
         if (customSpeedQuestion == 'N' || customSpeedQuestion == 'n') {
             customSpeed = 10;
@@ -129,5 +130,6 @@ public class main {
         }
 
         statistics.showStatistics();
+
     }
 }
