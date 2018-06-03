@@ -2,29 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="e257fc4d-61b8-446c-86e6-8393b3b40a3c" name="Default" comment="">
-      <change afterPath="$PROJECT_DIR$/src/client/EchoClient.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../SocketsEchoServer/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../SocketsEchoServer/.idea/modules.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../SocketsEchoServer/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../SocketsEchoServer/.idea/workspace.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../SocketsEchoServer/SocketsEchoServer.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../SocketsEchoServer/src/server/EchoServer.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../SocketsExampleClient/.idea/misc.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../SocketsExampleClient/.idea/modules.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../SocketsExampleClient/.idea/vcs.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../SocketsExampleClient/.idea/workspace.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../SocketsExampleClient/SocketsExampleClient.iml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../SocketsExampleClient/out/production/SocketsExampleClient/client/KnockKnockCient.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../SocketsExampleClient/src/client/KnockKnockCient.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../SocketsExampleServer/.idea/misc.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../SocketsExampleServer/.idea/modules.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../SocketsExampleServer/.idea/vcs.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../SocketsExampleServer/.idea/workspace.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../SocketsExampleServer/SocketsExampleServer.iml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../SocketsExampleServer/out/production/SocketsExampleServer/server/KnockKnockProtocol.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../SocketsExampleServer/out/production/SocketsExampleServer/server/KnockKnockServer.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../SocketsExampleServer/src/server/KnockKnockProtocol.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../SocketsExampleServer/src/server/KnockKnockServer.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../SnailRaceProject/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../SnailRaceProject/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/SocketsEchoClient/client/EchoClient.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/SocketsEchoClient/client/EchoClient.class" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -35,7 +15,20 @@
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
   <component name="FileEditorManager">
-    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300" />
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+      <file leaf-file-name="EchoClient.java" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/client/EchoClient.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="493">
+              <caret line="29" selection-start-line="29" selection-end-line="29" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+    </leaf>
   </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
@@ -67,8 +60,7 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="AndroidView" />
-      <pane id="Scope" />
+      <pane id="PackagesPane" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -91,11 +83,12 @@
           <select />
         </subPane>
       </pane>
-      <pane id="PackagesPane" />
+      <pane id="AndroidView" />
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../SocketsEchoServer" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="project.structure.last.edited" value="Modules" />
     <property name="project.structure.proportion" value="0.0" />
     <property name="project.structure.side.proportion" value="0.0" />
@@ -116,7 +109,7 @@
     <configuration name="Unnamed" type="Application" factoryName="Application">
       <option name="MAIN_CLASS_NAME" value="client.EchoClient" />
       <module name="SocketsEchoClient" />
-      <option name="PROGRAM_PARAMETERS" value="127.0.0.1 10001" />
+      <option name="PROGRAM_PARAMETERS" value="192.168.1.5 10002" />
       <option name="WORKING_DIRECTORY" value="file://$PROJECT_DIR$" />
     </configuration>
     <configuration default="true" type="Application" factoryName="Application">
@@ -184,7 +177,7 @@
       <window_info anchor="right" id="Capture Analysis" order="3" />
       <window_info anchor="bottom" id="Event Log" order="7" side_tool="true" />
       <window_info anchor="right" id="Maven Projects" order="3" />
-      <window_info anchor="bottom" id="Run" order="2" weight="0.32867134" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.22377622" />
       <window_info anchor="bottom" id="Version Control" order="7" />
       <window_info anchor="bottom" id="Terminal" order="7" />
       <window_info id="Capture Tool" order="2" />
@@ -212,6 +205,16 @@
     <entry file="file://$PROJECT_DIR$/src/client/EchoClient.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="493">
+          <caret line="29" selection-start-line="29" selection-end-line="29" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/client/EchoClient.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="493">
           <caret line="29" lean-forward="true" selection-start-line="29" selection-end-line="29" />
           <folding>
             <element signature="imports" expanded="true" />
@@ -234,7 +237,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/client/EchoClient.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="442">
+        <state relative-caret-position="493">
           <caret line="29" selection-start-line="29" selection-end-line="29" />
           <folding>
             <element signature="imports" expanded="true" />
