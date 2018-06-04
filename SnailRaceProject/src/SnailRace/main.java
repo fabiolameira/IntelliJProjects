@@ -103,6 +103,8 @@ public class main {
             System.out.println("                               Velociade máxima definida com " + customSpeed + "mm/movimento");
         }
 
+        keyBoard.close();
+
         System.out.println("\n");
         System.out.println("                                         Vamos a isso então! :D");
         System.out.println("\n");
