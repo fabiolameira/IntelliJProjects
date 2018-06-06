@@ -15,7 +15,9 @@ public class CalculatorServer implements Runnable {
 
     public static void main(String[] args) throws IOException {
 
-        ServerSocket server = new ServerSocket(12345);
+        int portNumber = 12345;
+
+        ServerSocket server = new ServerSocket(portNumber);
         System.out.println("Porta 12345 aberta!");
         System.out.println("Aguardando conexão do cliente...");
 

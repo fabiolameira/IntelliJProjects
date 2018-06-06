@@ -1,45 +1,51 @@
 package client;
 
+import java.io.BufferedReader;
 import java.io.IOException;
-import java.io.PrintStream;
+import java.io.InputStreamReader;
+import java.io.PrintWriter;
 import java.net.Socket;
-import java.util.Scanner;
+import java.net.UnknownHostException;
 
-public class CalculatorClient implements Runnable {
+public class CalculatorClient {
 
     private Socket client;
 
-    public CalculatorClient(Socket client){
+    private CalculatorClient(Socket client) {
         this.client = client;
     }
 
     public static void main(String args[]) throws IOException {
 
-        Socket socket = new Socket("127.0.0.1", 12345);
+        String hostName = "127.0.0.1";
+        int portNumber = 12345;
 
-        CalculatorClient client = new CalculatorClient(socket);
-        Thread thread = new Thread(client);
-        thread.start();
-    }
+        try (
+                Socket socket = new Socket(hostName, portNumber);
+                PrintWriter out = new PrintWriter(socket.getOutputStream(), true);
+                BufferedReader in = new BufferedReader(new InputStreamReader(socket.getInputStream()))) {
+            BufferedReader stdIn = new BufferedReader(new InputStreamReader(System.in));
+            String fromServer;
+            String fromUser;
 
-    public void run() {
-        try {
-            PrintStream output;
-            System.out.println("O cliente conectou ao servidor");
+            do {
+                fromUser = stdIn.readLine();
+                System.out.println("Client: " + fromUser);
+                out.println(fromUser);
 
-            Scanner keyboard = new Scanner(System.in);
-            output = new PrintStream(this.client.getOutputStream());
+                fromServer = in.readLine();
+                System.out.println("Server: " + fromServer);
 
-            while(keyboard.hasNextLine()){
-                output.println(keyboard.nextLine());
-            }
+                if (fromUser.equals("Adios"))break;
+            }while (true);
 
-            output.close();
-            keyboard.close();
-            this.client.close();
-            System.out.println("Fim do cliente!");
+        } catch (UnknownHostException e) {
+            System.err.println("Don't know about Host " + hostName);
+            System.exit(1);
         } catch (IOException e) {
-            e.printStackTrace();
+            System.err.println("Couldn't get I/O form the connection to " + hostName);
+            System.exit(1);
         }
+
     }
 }
