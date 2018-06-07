@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="b62dda93-a4e3-4fbb-96f2-195cf4f61eb3" name="Default" comment="" />
+    <list default="true" id="9d685435-0b76-40f9-9201-46e215c8608b" name="Default" comment="" />
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -12,15 +12,15 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="CalculatorClient.java" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/client/CalculatorClient.java">
+      <file leaf-file-name="CalculatorServer.java" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/server/CalculatorServer.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="144">
-              <caret line="32" column="17" selection-start-line="32" selection-start-column="17" selection-end-line="32" selection-end-column="17" />
+            <state relative-caret-position="187">
+              <caret line="11" column="25" selection-start-line="11" selection-start-column="25" selection-end-line="11" selection-end-column="25" />
               <folding>
                 <element signature="imports" expanded="true" />
-                <element signature="e#136#137#0" expanded="true" />
-                <element signature="e#172#173#0" expanded="true" />
+                <element signature="e#123#124#0" expanded="true" />
+                <element signature="e#159#160#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -38,7 +38,7 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/src/client/CalculatorClient.java" />
+        <option value="$PROJECT_DIR$/src/server/CalculatorServer.java" />
       </list>
     </option>
   </component>
@@ -62,31 +62,31 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scope" />
       <pane id="AndroidView" />
+      <pane id="PackagesPane" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
             <path>
-              <item name="SocketsCalculatorClient" type="b2602c69:ProjectViewProjectNode" />
-              <item name="SocketsCalculatorClient" type="462c0819:PsiDirectoryNode" />
+              <item name="SocketsCalculatorServer" type="b2602c69:ProjectViewProjectNode" />
+              <item name="SocketsCalculatorServer" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
-              <item name="SocketsCalculatorClient" type="b2602c69:ProjectViewProjectNode" />
-              <item name="SocketsCalculatorClient" type="462c0819:PsiDirectoryNode" />
+              <item name="SocketsCalculatorServer" type="b2602c69:ProjectViewProjectNode" />
+              <item name="SocketsCalculatorServer" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
-              <item name="SocketsCalculatorClient" type="b2602c69:ProjectViewProjectNode" />
-              <item name="SocketsCalculatorClient" type="462c0819:PsiDirectoryNode" />
+              <item name="SocketsCalculatorServer" type="b2602c69:ProjectViewProjectNode" />
+              <item name="SocketsCalculatorServer" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="client" type="462c0819:PsiDirectoryNode" />
+              <item name="server" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
         </subPane>
       </pane>
-      <pane id="PackagesPane" />
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -108,13 +108,13 @@
     </option>
   </component>
   <component name="RunManager">
-    <configuration name="CalculatorClient" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="client.CalculatorClient" />
-      <module name="SocketsCalculatorClient" />
+    <configuration name="CalculatorServer" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="server.CalculatorServer" />
+      <module name="SocketsCalculatorServer" />
       <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="client.*" />
+          <option name="PATTERN" value="server.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -162,7 +162,7 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Application.CalculatorClient" />
+        <item itemvalue="Application.CalculatorServer" />
       </list>
     </recent_temporary>
   </component>
@@ -171,17 +171,17 @@
   </component>
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
-      <changelist id="b62dda93-a4e3-4fbb-96f2-195cf4f61eb3" name="Default" comment="" />
-      <created>1528395062354</created>
+      <changelist id="9d685435-0b76-40f9-9201-46e215c8608b" name="Default" comment="" />
+      <created>1528395249546</created>
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
-      <updated>1528395062354</updated>
-      <workItem from="1528395063963" duration="382000" />
+      <updated>1528395249546</updated>
+      <workItem from="1528395253635" duration="194000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="382000" />
+    <option name="totallyTimeSpent" value="194000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="0" width="1366" height="768" extended-state="6" />
@@ -195,7 +195,7 @@
       <window_info anchor="bottom" id="Event Log" side_tool="true" />
       <window_info anchor="right" id="Maven Projects" />
       <window_info anchor="bottom" id="Database Changes" show_stripe_button="false" />
-      <window_info anchor="bottom" id="Run" order="2" weight="0.29090908" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.32867134" />
       <window_info anchor="bottom" id="Version Control" show_stripe_button="false" />
       <window_info anchor="bottom" id="Terminal" />
       <window_info id="Capture Tool" />
@@ -223,14 +223,14 @@
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/client/CalculatorClient.java">
+    <entry file="file://$PROJECT_DIR$/src/server/CalculatorServer.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="144">
-          <caret line="32" column="17" selection-start-line="32" selection-start-column="17" selection-end-line="32" selection-end-column="17" />
+        <state relative-caret-position="187">
+          <caret line="11" column="25" selection-start-line="11" selection-start-column="25" selection-end-line="11" selection-end-column="25" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="e#136#137#0" expanded="true" />
-            <element signature="e#172#173#0" expanded="true" />
+            <element signature="e#123#124#0" expanded="true" />
+            <element signature="e#159#160#0" expanded="true" />
           </folding>
         </state>
       </provider>
