@@ -1,7 +1,16 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="819c44a6-fd8d-4c62-a486-e8334dc44b98" name="Default" comment="" />
+    <list default="true" id="819c44a6-fd8d-4c62-a486-e8334dc44b98" name="Default" comment="">
+      <change afterPath="$PROJECT_DIR$/../SocketsCalculatorClient/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../SocketsCalculatorServer/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../SocketsCalculatorServer/src/server/CalculatorOperations.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../SocketsCalculatorClient/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../SocketsCalculatorClient/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../SocketsCalculatorServer/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../SocketsCalculatorServer/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../SocketsCalculatorServer/out/production/SocketsCalculatorServer/server/CalculatorServer.class" beforeDir="false" afterPath="$PROJECT_DIR$/../SocketsCalculatorServer/out/production/SocketsCalculatorServer/server/CalculatorServer.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../SocketsCalculatorServer/src/server/CalculatorServer.java" beforeDir="false" afterPath="$PROJECT_DIR$/../SocketsCalculatorServer/src/server/CalculatorServer.java" afterDir="false" />
+    </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -34,9 +43,9 @@
       <list>
         <option value="$PROJECT_DIR$/src/SnailRace/place.java" />
         <option value="$PROJECT_DIR$/src/SnailRace/route.java" />
-        <option value="$PROJECT_DIR$/src/SnailRace/statistics.java" />
         <option value="$PROJECT_DIR$/src/SnailRace/snail.java" />
         <option value="$PROJECT_DIR$/src/SnailRace/main.java" />
+        <option value="$PROJECT_DIR$/src/SnailRace/statistics.java" />
       </list>
     </option>
   </component>
@@ -61,7 +70,9 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="PackagesPane" />
       <pane id="Scope" />
+      <pane id="AndroidView" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -84,8 +95,6 @@
           <select />
         </subPane>
       </pane>
-      <pane id="AndroidView" />
-      <pane id="PackagesPane" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -182,11 +191,13 @@
       <workItem from="1528152124194" duration="118000" />
       <workItem from="1528206819494" duration="924000" />
       <workItem from="1528386187073" duration="52000" />
+      <workItem from="1528721286983" duration="934000" />
+      <workItem from="1528818350137" duration="160000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="1157000" />
+    <option name="totallyTimeSpent" value="2251000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="0" width="1366" height="768" extended-state="6" />
@@ -200,7 +211,7 @@
       <window_info anchor="right" id="Maven Projects" order="6" />
       <window_info anchor="bottom" id="Database Changes" order="12" show_stripe_button="false" />
       <window_info anchor="bottom" id="Version Control" order="9" />
-      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.49853587" weight="0.17902099" />
+      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.49853587" weight="0.2" />
       <window_info anchor="bottom" id="Terminal" order="7" />
       <window_info id="Capture Tool" order="6" />
       <window_info id="Designer" order="3" />
@@ -568,33 +579,23 @@
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/SnailRace/place.java" />
-    <entry file="file://$PROJECT_DIR$/src/SnailRace/route.java">
+    <entry file="file://$PROJECT_DIR$/src/SnailRace/statistics.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="238">
-          <caret line="16" selection-start-line="16" selection-end-line="16" />
-          <folding>
-            <element signature="e#227#228#0" expanded="true" />
-            <element signature="e#263#264#0" expanded="true" />
-            <element signature="e#292#293#0" expanded="true" />
-            <element signature="e#320#321#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/SnailRace/main.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret column="18" selection-start-column="18" selection-end-column="18" />
+        <state relative-caret-position="225">
+          <caret line="15" lean-forward="true" selection-start-line="15" selection-end-line="15" />
           <folding>
             <element signature="imports" expanded="true" />
+            <element signature="method#statistics#0;class#statistics#0" />
+            <element signature="e#820#821#0" expanded="true" />
+            <element signature="e#866#867#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/SnailRace/snail.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1241">
-          <caret line="73" column="23" selection-start-line="73" selection-start-column="16" selection-end-line="73" selection-end-column="23" />
+        <state relative-caret-position="412">
+          <caret line="79" column="34" selection-start-line="79" selection-start-column="20" selection-end-line="79" selection-end-column="34" />
           <folding>
             <element signature="e#650#651#0" expanded="true" />
             <element signature="e#684#685#0" expanded="true" />
@@ -608,14 +609,25 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/SnailRace/statistics.java">
+    <entry file="file://$PROJECT_DIR$/src/SnailRace/route.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="429">
-          <caret line="47" column="104" selection-start-line="47" selection-start-column="104" selection-end-line="47" selection-end-column="104" />
+        <state relative-caret-position="272">
+          <caret line="16" selection-start-line="16" selection-end-line="16" />
+          <folding>
+            <element signature="e#227#228#0" expanded="true" />
+            <element signature="e#263#264#0" expanded="true" />
+            <element signature="e#292#293#0" expanded="true" />
+            <element signature="e#320#321#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/SnailRace/main.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="565">
+          <caret line="137" selection-start-line="137" selection-end-line="137" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="method#statistics#0;class#statistics#0" />
-            <element signature="method#setSnailPlace#0;class#statistics#0" />
           </folding>
         </state>
       </provider>
